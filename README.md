@@ -13,15 +13,15 @@ Kho lưu trữ cá nhân chứa code trong quá trình học tập, code luyện
 
 ```
 VDevKit/
-├── scripts/           # Script .sh, .bat phục vụ tự động hoá công việc
-├── tools/             # Tool nhỏ dạng CLI
-├── practice/          # Code luyện tập / thi đấu thuật toán
+├── scripts/           
+├── tools/            
+├── practice/         
 │   ├── leetcode/
 │   └── codeforces/
-├── learning/          # Code viết trong quá trình học (theo ngôn ngữ/môn học)
-├── docs/               # Tài liệu
-│   ├── ccna/          # Ghi chú, tài liệu CCNA
-│   ├── lpi/            # Ghi chú, tài liệu LPI
-│   └── programming/   # Tài liệu lập trình chung (md/pdf/typst/latex nguồn)
+├── learning/          
+├── docs/               
+│   ├── ccna/          
+│   ├── lpi/            
+│   └── programming/   
 └── README.md
 ```
