@@ -1,0 +1,49 @@
+{
+  "groups": {
+    "base": {
+      "description": "Công cụ dòng lệnh cơ bản",
+      "packages": ["git", "curl", "wget", "zsh", "htop"]
+    },
+    "network": {
+      "description": "Công cụ kiểm tra và phân tích mạng",
+      "packages": ["nmap", "wireshark", "tcpdump", "traceroute"]
+    },
+    "desktop": {
+      "description": "Ứng dụng desktop thông dụng",
+      "helpers": ["vscode", "copyq", "filezilla", "unar", "chrome"]
+    },
+    "development": {
+      "description": "Toolchain phát triển phần mềm",
+      "helpers": ["uv"]
+    },
+    "input": {
+      "description": "Bộ gõ tiếng Việt Fcitx5 Lotus",
+      "helpers": ["lotus"]
+    },
+    "media": {
+      "description": "Phần mềm ghi hình và phát trực tiếp",
+      "helpers": ["obs"]
+    },
+    "virtualization": {
+      "description": "QEMU/KVM và virt-manager",
+      "helpers": ["virt"]
+    },
+    "hardware": {
+      "description": "Driver phần cứng tùy chọn",
+      "optional": true,
+      "helpers": ["nvidia"]
+    }
+  },
+  "helpers": {
+    "vscode": {"module": "vscode.sh", "function": "install_vscode"},
+    "copyq": {"module": "copyq.sh", "function": "install_copyq"},
+    "uv": {"module": "uv.sh", "function": "install_uv"},
+    "lotus": {"module": "lotus.sh", "function": "install_lotus"},
+    "filezilla": {"module": "filezilla.sh", "function": "install_filezilla"},
+    "unar": {"module": "unar.sh", "function": "install_unar"},
+    "obs": {"module": "obs.sh", "function": "install_obs"},
+    "chrome": {"module": "chrome.sh", "function": "install_chrome"},
+    "nvidia": {"module": "nvidia.sh", "function": "install_nvidia"},
+    "virt": {"module": "virt.sh", "function": "install_virt"}
+  }
+}

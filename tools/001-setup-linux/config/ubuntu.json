@@ -1,0 +1,7 @@
+{
+  "groups": {
+    "development": {
+      "packages": ["build-essential", "cmake", "python3-dev"]
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "groups": {
+    "development": {
+      "packages": ["base-devel", "cmake", "python"]
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "groups": {
+    "development": {
+      "packages": ["gcc", "gcc-c++", "cmake", "python3-devel"]
+    }
+  }
+}
