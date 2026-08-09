@@ -1,0 +1,10 @@
+def charactersRearrangement(string1, string2):
+    ls = [0] * 256
+
+    for c in string1:
+        ls[ord(c)] += 1
+
+    for c in string2:
+        ls[ord(c)] -= 1
+
+    return all(x == 0 for x in ls)
