@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Codeforces DSA Roadmap</title>
+  <style>
+    :root{
+      --bg:#0b0f14;
+      --panel:#111823;
+      --panel2:#151e2b;
+      --text:#e6edf3;
+      --muted:#9ba7b4;
+      --line:#263244;
+      --accent:#58a6ff;
+      --good:#3fb950;
+      --warn:#d29922;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      background:linear-gradient(180deg,#080b10 0%,var(--bg) 100%);
+      color:var(--text);
+      line-height:1.65;
+    }
+    .wrap{max-width:1050px;margin:auto;padding:32px 20px 64px}
+    header{
+      padding:34px;
+      border:1px solid var(--line);
+      background:linear-gradient(135deg,#101a28,#0e141d);
+      border-radius:18px;
+      margin-bottom:24px;
+    }
+    h1{font-size:clamp(2rem,5vw,3.6rem);line-height:1.08;margin:0 0 14px}
+    h2{margin-top:0}
+    h3{margin-bottom:6px}
+    p{color:var(--muted)}
+    strong{color:var(--text)}
+    .badge{
+      display:inline-block;padding:5px 10px;border-radius:999px;
+      background:#162334;color:#79c0ff;font-size:.84rem;margin-bottom:12px
+    }
+    nav{
+      display:flex;gap:10px;flex-wrap:wrap;margin-top:20px
+    }
+    nav a,.button{
+      text-decoration:none;color:var(--text);border:1px solid var(--line);
+      background:#111925;padding:9px 13px;border-radius:9px
+    }
+    nav a:hover,.button:hover{border-color:var(--accent);color:#fff}
+    section{
+      border:1px solid var(--line);background:rgba(17,24,35,.86);
+      border-radius:16px;padding:25px;margin-top:20px
+    }
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+    .card{
+      background:var(--panel2);border:1px solid var(--line);
+      border-radius:13px;padding:18px
+    }
+    .card p{margin-bottom:0}
+    .phase{
+      display:grid;grid-template-columns:70px 1fr;gap:16px;
+      padding:18px 0;border-bottom:1px solid var(--line)
+    }
+    .phase:last-child{border-bottom:0}
+    .num{
+      width:52px;height:52px;border-radius:50%;
+      display:grid;place-items:center;background:#142338;color:#79c0ff;
+      font-weight:800;font-size:1.25rem
+    }
+    .topics{display:flex;gap:8px;flex-wrap:wrap;margin-top:9px}
+    .topic{
+      font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+      font-size:.82rem;padding:4px 8px;border-radius:7px;background:#0d141e;border:1px solid var(--line)
+    }
+    .resource{
+      display:flex;justify-content:space-between;gap:18px;align-items:center;
+      padding:17px 0;border-bottom:1px solid var(--line)
+    }
+    .resource:last-child{border-bottom:0}
+    .resource p{margin:3px 0 0}
+    .button{white-space:nowrap;color:#79c0ff}
+    .plan-table{width:100%;border-collapse:collapse;margin-top:10px}
+    .plan-table th,.plan-table td{
+      text-align:left;padding:12px;border-bottom:1px solid var(--line);vertical-align:top
+    }
+    .plan-table th{color:#79c0ff}
+    .note{
+      border-left:4px solid var(--good);background:#0e1b15;
+      padding:14px 16px;border-radius:8px;color:#b7c4bd
+    }
+    code{color:#d2a8ff}
+    footer{text-align:center;color:#718096;margin-top:30px;font-size:.9rem}
+    @media(max-width:650px){
+      header,section{padding:20px}
+      .phase{grid-template-columns:50px 1fr}
+      .resource{display:block}
+      .button{display:inline-block;margin-top:10px}
+      .plan-table{font-size:.9rem}
+    }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="badge">Codeforces • DSA • Competitive Programming</div>
+    <h1>Roadmap luyện DSA trên Codeforces</h1>
+    <p>
+      Lộ trình dành cho người muốn vừa xây nền tảng DSA, vừa tăng khả năng giải bài Codeforces.
+      Nguyên tắc: <strong>luyện bài dễ để hình thành tư duy → học theo topic → tăng rating dần → học cấu trúc dữ liệu nâng cao.</strong>
+    </p>
+    <nav>
+      <a href="#roadmap">Lộ trình</a>
+      <a href="#sheets">Sheets</a>
+      <a href="#schedule">Kế hoạch luyện</a>
+      <a href="#rules">Cách học</a>
+    </nav>
+  </header>
+
+  <section id="roadmap">
+    <h2>1. Lộ trình đề xuất</h2>
+
+    <div class="phase">
+      <div class="num">1</div>
+      <div>
+        <h3>Nền tảng lập trình & Problem Solving</h3>
+        <p>Ưu tiên bài Codeforces rating khoảng <strong>800–1000</strong>. Mục tiêu là đọc đề nhanh, mô phỏng đúng và code ít lỗi.</p>
+        <div class="topics">
+          <span class="topic">Array</span><span class="topic">String</span>
+          <span class="topic">Implementation</span><span class="topic">Math cơ bản</span>
+          <span class="topic">Sorting</span><span class="topic">Map / Set</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="num">2</div>
+      <div>
+        <h3>Kỹ thuật DSA cơ bản</h3>
+        <p>Đây là nhóm thuật toán xuất hiện liên tục ở mức 900–1300.</p>
+        <div class="topics">
+          <span class="topic">Prefix Sum</span><span class="topic">Binary Search</span>
+          <span class="topic">Two Pointers</span><span class="topic">Stack</span>
+          <span class="topic">Queue</span><span class="topic">Greedy</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="num">3</div>
+      <div>
+        <h3>Graph & Dynamic Programming</h3>
+        <p>Khi đã xử lý ổn định các bài 1000–1200, bắt đầu học các thuật toán có tính mô hình hóa cao hơn.</p>
+        <div class="topics">
+          <span class="topic">DFS</span><span class="topic">BFS</span>
+          <span class="topic">Connected Components</span><span class="topic">Shortest Path</span>
+          <span class="topic">DP cơ bản</span><span class="topic">Knapsack</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="num">4</div>
+      <div>
+        <h3>Cấu trúc dữ liệu trung cấp</h3>
+        <p>Tập trung vào bài cần quản lý tập hợp, truy vấn hoặc cập nhật dữ liệu hiệu quả.</p>
+        <div class="topics">
+          <span class="topic">Heap / Priority Queue</span><span class="topic">DSU</span>
+          <span class="topic">Tree</span><span class="topic">Fenwick Tree</span>
+          <span class="topic">Segment Tree</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="num">5</div>
+      <div>
+        <h3>Leo rating có hệ thống</h3>
+        <p>
+          Sau khi có nền tảng, tăng dần:
+          <code>800 → 900 → 1000 → 1100 → 1200 → 1300 → 1400 → 1500+</code>.
+          Không cần ép bản thân học toàn bộ thuật toán trước khi contest.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="sheets">
+    <h2>2. Các sheet / course nên dùng</h2>
+
+    <div class="resource">
+      <div>
+        <h3>CP-31 Sheet — TLE Eliminators</h3>
+        <p>31 bài được chọn ở mỗi mức rating từ 800 đến 1900. Rất phù hợp để leo rating từng bước.</p>
+      </div>
+      <a class="button" href="https://www.tle-eliminators.com/cp-sheet" target="_blank" rel="noopener">Mở CP-31 ↗</a>
+    </div>
+
+    <div class="resource">
+      <div>
+        <h3>Codeforces EDU — ITMO Academy</h3>
+        <p>Course competitive programming trên Codeforces, dùng tốt để học theo lesson và luyện thuật toán có cấu trúc.</p>
+      </div>
+      <a class="button" href="https://codeforces.com/edu/courses" target="_blank" rel="noopener">Mở EDU ↗</a>
+    </div>
+
+    <div class="resource">
+      <div>
+        <h3>A2OJ Ladders</h3>
+        <p>Các ladder 100 bài theo mức rating hoặc Div.2 A/B/C/D. Hữu ích để luyện khối lượng bài lớn sau khi đã có nền.</p>
+      </div>
+      <a class="button" href="https://earthshakira.github.io/a2oj-clientside/server/Ladders.html" target="_blank" rel="noopener">Mở A2OJ ↗</a>
+    </div>
+
+    <div class="resource">
+      <div>
+        <h3>The Ultimate Topic List</h3>
+        <p>Tổng hợp topic, tutorial, problem list và template từ cơ bản đến nâng cao. Dùng như tài liệu tra cứu theo chủ đề.</p>
+      </div>
+      <a class="button" href="https://codeforces.com/blog/entry/95106" target="_blank" rel="noopener">Mở Topic List ↗</a>
+    </div>
+
+    <div class="resource">
+      <div>
+        <h3>Codeforces Problemset</h3>
+        <p>Dùng bộ lọc rating và tag để tự tạo bài luyện bổ sung khi một topic còn yếu.</p>
+      </div>
+      <a class="button" href="https://codeforces.com/problemset" target="_blank" rel="noopener">Mở Problemset ↗</a>
+    </div>
+  </section>
+
+  <section id="schedule">
+    <h2>3. Kế hoạch luyện theo giai đoạn</h2>
+    <table class="plan-table">
+      <thead>
+        <tr>
+          <th>Giai đoạn</th>
+          <th>Rating / nội dung</th>
+          <th>Nguồn chính</th>
+          <th>Mục tiêu</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>01</td>
+          <td>800</td>
+          <td>CP-31</td>
+          <td>Implementation, array, string, math cơ bản</td>
+        </tr>
+        <tr>
+          <td>02</td>
+          <td>900</td>
+          <td>CP-31</td>
+          <td>Sorting, map/set, quan sát quy luật</td>
+        </tr>
+        <tr>
+          <td>03</td>
+          <td>1000</td>
+          <td>CP-31 + EDU</td>
+          <td>Prefix sum, binary search, greedy cơ bản</td>
+        </tr>
+        <tr>
+          <td>04</td>
+          <td>1100–1200</td>
+          <td>CP-31 + EDU</td>
+          <td>Two pointers, greedy, constructive, graph cơ bản</td>
+        </tr>
+        <tr>
+          <td>05</td>
+          <td>1200–1400</td>
+          <td>EDU + A2OJ</td>
+          <td>DFS/BFS, DSU, DP cơ bản, shortest path</td>
+        </tr>
+        <tr>
+          <td>06</td>
+          <td>1400–1600+</td>
+          <td>EDU + Topic List + contest</td>
+          <td>Tree, Fenwick, Segment Tree, DP nâng cao</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="rules">
+    <h2>4. Cách luyện để có hiệu quả</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>① Không xem editorial quá sớm</h3>
+        <p>Cho mỗi bài một khoảng thời gian tự suy nghĩ. Nếu bí, xem hint trước rồi mới xem lời giải hoàn chỉnh.</p>
+      </div>
+      <div class="card">
+        <h3>② Upsolve sau contest</h3>
+        <p>Những bài không giải được trong contest thường là nguồn học tốt nhất vì chúng nằm ngay trên ngưỡng năng lực hiện tại.</p>
+      </div>
+      <div class="card">
+        <h3>③ Ghi lại pattern</h3>
+        <p>Không chỉ lưu code. Ghi lại dấu hiệu nhận biết: khi nào dùng prefix sum, binary search, greedy, DSU, DP...</p>
+      </div>
+      <div class="card">
+        <h3>④ Tăng rating từ từ</h3>
+        <p>Khi giải ổn định phần lớn bài ở một mức rating, chuyển lên mức kế tiếp thay vì nhảy quá xa.</p>
+      </div>
+    </div>
+
+    <p class="note">
+      <strong>Điểm bắt đầu khuyến nghị:</strong>
+      CP-31 rating <strong>800 → 900 → 1000</strong>, sau đó học song song Codeforces EDU.
+      A2OJ nên dùng như nguồn bài bổ sung thay vì curriculum chính.
+    </p>
+  </section>
+
+  <footer>
+    Codeforces DSA Roadmap • Tài liệu học cá nhân
+  </footer>
+</div>
+</body>
+</html>
